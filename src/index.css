@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background-image: linear-gradient(to top, #1c2543 0%, #370f55e2 100%);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.browser {
+  background-image: url(../src/assets/img/Pokémon_logo.svg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cards {
+  overflow: hidden;
+  --opacidad-negro: 0.8;
+  background-image: linear-gradient(
+      rgba(30, 30, 40, var(--opacidad-negro)),
+      rgba(40, 30, 70, var(--opacidad-negro))
+    ),
+    url(../src/assets/img/How-to-draw-a-pokeball-tutorial-drawing.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cards:hover {
+  background-color: rgb(192, 192, 192);
+  transition: ease-in-out 0.5s;
+  transform: scale(1.02);
+  box-shadow: 0 0 8px #000;
+}
+.title_img {
+  height: 4.5rem;
+  width: 3.5rem;
+}
+.title_img:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.5s;
+  transition-duration: 0.5s;
+}
